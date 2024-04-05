@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+  const secret = process.env.REACT_APP_TEST_SECRET;
+  console.log(`secret: ${secret}`);
   return (
     <div className="App">
       <header className="App-header">
@@ -11,13 +14,14 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://example.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React-202404
         </a>
       </header>
+      {/* <CacheUseMemo/> */}
     </div>
   );
 }
