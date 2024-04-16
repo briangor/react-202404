@@ -1,5 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
+import { Counter } from './components/counter/counter';
+import Gallery from './components/gallery';
+import Profile from './components/profile';
 import Todo from './components/Todo';
 import UrlState from './components/UrlState';
 import VoteUseReducer from './components/VotingUseReducer';
@@ -15,9 +18,10 @@ function App() {
         <p>
           React 202404
         </p>
-        <Todo />
-        <VoteUseReducer />
-        <UrlState />
+
+        <Gallery />
+        
+      
       </header>
       {/* <CacheUseMemo/> */}
     </div>
