@@ -5,6 +5,8 @@ import Gallery from './components/gallery';
 import Profile from './components/profile';
 import Todo from './components/Todo';
 import UrlState from './components/UrlState';
+import UsersReactQuery from './components/UsersReactQuery';
+import UsersUseEffect from './components/UsersUseEffect';
 import VoteUseReducer from './components/VotingUseReducer';
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
           React 202404
         </p>
 
-        <Gallery />
+        {/* <Gallery /> */}
+        <UsersUseEffect />
+        <UsersReactQuery />
         
       
       </header>
