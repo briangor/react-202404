@@ -6,6 +6,24 @@ import reportWebVitals from './reportWebVitals';
 import { QueryClient, QueryClientProvider } from 'react-query';
 // import { Provider } from 'react-redux';
 // import store from './store';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import UsersUseEffect from './components/UsersUseEffect';
+import UsersReactQuery from './components/UsersReactQuery';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/users1",
+    element: <UsersUseEffect />,
+  },
+  {
+    path: "/users2",
+    element: <UsersReactQuery />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +32,7 @@ root.render(
       <App />
     </Provider> */}
     <QueryClientProvider client={new QueryClient()}>
-      <App />
+      <RouterProvider router={router} />
     </QueryClientProvider>
   </React.StrictMode>
 );
