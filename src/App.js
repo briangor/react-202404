@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Counter } from './components/counter/counter';
+import Footer from './components/footer';
 import Gallery from './components/gallery';
 import Profile from './components/profile';
 import Todo from './components/Todo';
