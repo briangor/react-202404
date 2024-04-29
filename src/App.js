@@ -8,6 +8,7 @@ import UrlState from './components/UrlState';
 import UsersReactQuery from './components/UsersReactQuery';
 import UsersUseEffect from './components/UsersUseEffect';
 import VoteUseReducer from './components/VotingUseReducer';
+import Home from './pages/home';
 
 function App() {
   console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
@@ -15,19 +16,17 @@ function App() {
   console.log(`secret: ${secret}`);
   return (
     <div className="App">
-      <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          React 202404
-        </p>
+       
 
         {/* <Gallery /> */}
-        <UsersUseEffect />
-        <UsersReactQuery />
+        {/* <UsersUseEffect />
+        <UsersReactQuery /> */}
         
       
-      </header>
+     
       {/* <CacheUseMemo/> */}
+      <Home />
     </div>
   );
 }
