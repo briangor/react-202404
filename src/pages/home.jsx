@@ -3,6 +3,8 @@ import Navbar from '../components/navbar'
 import { useQueries, useQuery } from 'react-query';
 import axios from 'axios';
 import Game from '../features/tictactoe/Game';
+import TaskAppState from '../components/reducer/TaskAppState';
+import TaskAppReducer from '../components/reducer/TaskAppReducer';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -57,6 +59,8 @@ export default function Home() {
             ))} */}
             <hr />
             <Game />
+            <TaskAppState />
+            <TaskAppReducer />
         </div>
     )
 }
