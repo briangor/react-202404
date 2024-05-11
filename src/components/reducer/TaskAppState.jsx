@@ -45,7 +45,7 @@ export default function TaskAppState() {
     );
 }
 
-let nextId = 3;
+let nextId = 3; // todo: define this dynamically
 const initialTasks = [
     { id: 0, text: 'Visit Kafka Museum', done: true },
     { id: 1, text: 'Watch a puppet show', done: false },
