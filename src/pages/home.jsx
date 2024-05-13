@@ -5,6 +5,8 @@ import axios from 'axios';
 import Game from '../features/tictactoe/Game';
 import TaskAppState from '../components/reducer/TaskAppState';
 import TaskAppReducer from '../components/reducer/TaskAppReducer';
+import Property from '../components/property';
+import Properties from '../components/properties';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -61,6 +63,10 @@ export default function Home() {
             <Game />
             <TaskAppState />
             <TaskAppReducer />
+            <hr />
+            <h4>kyt</h4>
+            <Property />
+            <Properties />
         </div>
     )
 }
