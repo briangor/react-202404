@@ -1,47 +1,33 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
+// import { properties as DATA } from "../data/properties";
 
 export default function Properties() {
-    const [properties, setProperties] = useState(null);
+    // const [properties, setProperties] = useState(null);
+    // const URL = "";
 
-    useEffect(() => {
-        async function getData() {
-            const response = await getAll();
-            console.log(response.data);
-            setProperties(response.data);
-        }
-    }, []);
-    console.log(properties);
-  return <div>Properties</div>;
-}
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await axios.get(URL);
+    //         //console.log(response.data);
+    //         setProperties(response.data);
+    //     }
+    //     getData();
+    // }, []);
+    //console.log(properties);
 
-// export axios.create({
-//     baseURL: process.env.REACT_APP_API_URL || "http://localhost:8080/api/",
-//     headers: {
-//         "Content-type": "application/json",
-//         "Access-Control-Allow-Origin": "*"
-//     },
-// });
-
-// class PropertyDataService {
-//     getAll() {
-//         return http.get("/properties");
-//     }
-
-export function fetcher() {
-  return axios.create({
-    baseURL:
-      process.env.REACT_APP_API_URL ||
-      "http://localhost:8080/api/",
-    headers: {
-      "Content-type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
-  });
-}
-
-function getAll() {
-  return fetcher.get("/properties");  
+  // const house = properties.map(d => 
+  //   <li>{d.description}</li>
+  // )
+  
+  return <div>
+    <h1>PROPERTIES</h1>
+    
+    {/* {properties ? 
+    <ul>{properties.map(d => <li>{d.description}</li>)}</ul>
+    : <p>Loading...</p>
+    } */}
+  </div>;
 }
 
 
