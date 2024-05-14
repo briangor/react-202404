@@ -64,9 +64,10 @@ export default function Home() {
             <TaskAppState />
             <TaskAppReducer />
             <hr />
-            <h4>kyt</h4>
+            <h1>kyt</h1>
             <Property />
-            <Properties />
+            <hr />
+            {/* <Properties /> */}
         </div>
     )
 }
