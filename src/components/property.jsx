@@ -9,6 +9,15 @@ import { Link } from "react-router-dom";
 
 export default function Property({ property }) {
     //console.log(props);
+    // const default_property = {
+    //   img_url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+    //   price: "Ksh 1,291,000",
+    //   description: "1200 Muruma Drive, Lenana. 21BC",
+    //   name: "XXXXXX, Nairobi",
+    //   beds: 2,
+    //   baths: 2
+    // }
+    const beds = 2;
   return (
     <div className="property-item col-sm-12 col-md-3 mb-3">
         <Link to="/property-detail" className="img">
@@ -27,7 +36,7 @@ export default function Property({ property }) {
             <span className="d-block d-flex align-items-center me-3">
               {/* <span className="icon-bed me-2" /> */}
                {/* <FontAwesomeIcon icon={faBed}/> */}
-              <span className="caption mx-1">2 beds</span>
+              <span className="caption mx-1"> beds</span> 
             </span>
             <span className="d-block d-flex align-items-center">
               {/* <span className="icon-bath me-2" /> */}
