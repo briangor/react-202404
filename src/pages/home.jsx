@@ -7,6 +7,7 @@ import TaskAppState from '../components/reducer/TaskAppState';
 import TaskAppReducer from '../components/reducer/TaskAppReducer';
 import Property from '../components/property';
 import Properties from '../components/properties';
+import Refs from '../components/Refs';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -65,8 +66,11 @@ export default function Home() {
             <TaskAppReducer />
             <hr />
             <h4>kyt</h4>
-            <Property />
-            <Properties />
+            {/* <Property /> */}
+            {/* <Properties /> */}
+
+            <hr />
+            <Refs />
         </div>
     )
 }
