@@ -67,7 +67,7 @@ export default function Home() {
             <hr />
             <h4>kyt</h4>
             {/* <Property /> */}
-            {/* <Properties /> */}
+            <Properties />
 
             <hr />
             <Refs />
