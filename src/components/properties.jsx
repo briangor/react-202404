@@ -34,3 +34,4 @@ export default function Properties() {
 //todo: TEST for kyt -> fetch data, use props then refactor to a reducer; use state then refactor to contextAPI /  useQuery / SWR
 // baseURL: the api link
 // todo: use react-query(tanstark) & SWR
+// todo: test caching performance 
