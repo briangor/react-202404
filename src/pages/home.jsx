@@ -8,6 +8,8 @@ import TaskAppReducer from '../components/reducer/TaskAppReducer';
 import Property from '../components/property';
 import Properties from '../components/properties';
 import Refs from '../components/Refs';
+import CircleTimer from '../components/countdown/CircleTimer';
+import TimerHook from '../components/countdown/TimerHook';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -71,6 +73,10 @@ export default function Home() {
 
             <hr />
             <Refs />
+            <hr />
+            <CircleTimer />
+            <br />
+            <TimerHook />
         </div>
     )
 }
