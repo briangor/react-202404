@@ -5,9 +5,12 @@ const minuteSeconds = 60;
 const hourSeconds = 3600;
 const daySeconds = 86400;
 
+// get size from screen
+let deviceSize = window.innerWidth;
+
 const timerProps = {
   isPlaying: true,
-  size: 120,
+  size: deviceSize / 4.5,
   strokeWidth: 6
 };
 
