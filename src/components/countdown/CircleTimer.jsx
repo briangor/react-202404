@@ -31,11 +31,30 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 export default function CircleTimer() {
     const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
   // const endTime = stratTime + 243248; // use UNIX timestamp in seconds
-  const endTime = stratTime + 1831914; //1831914
-
-  const remainingTime = endTime - stratTime;
+  // const endTime = stratTime + 1831914; //1831914
+  const endTime = 1718647200 - stratTime; //1718658000 is epoch time for 17/06/2024 9pm
+// 1717400772
+// 1718647200
+  const remainingTime = endTime;
+  console.log("remainingTime: "+remainingTime);
+  console.log("stratTime: "+stratTime);
   const days = Math.ceil(remainingTime / daySeconds);
   const daysDuration = days * daySeconds;
+  // const difference = remainingTime;
+  const difference = +new Date(`06/17/2024`) - +new Date();
+  console.log("difference: " + difference);
+  let timeLeft = {};
+
+    if (difference > 0) {
+        timeLeft = {
+            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((difference / 1000 / 60) % 60),
+            seconds: Math.floor((difference / 1000) % 60)
+        };
+    }
+
+  console.log(timeLeft);
   return (
     <div className="circle-timer">
       <h1>CircleTimer</h1>
@@ -47,7 +66,8 @@ export default function CircleTimer() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
+            {/* {renderTime("days", getTimeDays(daysDuration - elapsedTime))} */}
+            { renderTime("days", timeLeft.days)}
           </span>
         )}
       </CountdownCircleTimer>
@@ -62,7 +82,9 @@ export default function CircleTimer() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
+            {/* {renderTime("hours", getTimeHours(daySeconds - elapsedTime))} */}
+            {renderTime("hours", timeLeft.hours)}
+
           </span>
         )}
       </CountdownCircleTimer>
@@ -77,7 +99,8 @@ export default function CircleTimer() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
+            {/* {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))} */}
+            {renderTime("minutes", timeLeft.minutes)}
           </span>
         )}
       </CountdownCircleTimer>
@@ -85,14 +108,15 @@ export default function CircleTimer() {
         {...timerProps}
         colors="#218380"
         duration={minuteSeconds}
-        initialRemainingTime={remainingTime % minuteSeconds}
+        initialRemainingTime={difference % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > 0
+          shouldRepeat: difference - totalElapsedTime > 0
         })}
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("seconds", getTimeSeconds(elapsedTime))}
+            {/* {renderTime("seconds", getTimeSeconds(elapsedTime))} */}
+            {renderTime("seconds", timeLeft.seconds)}
           </span>
         )}
       </CountdownCircleTimer>
