@@ -10,6 +10,7 @@ import Properties from '../components/properties';
 import Refs from '../components/Refs';
 import CircleTimer from '../components/countdown/CircleTimer';
 import TimerHook from '../components/countdown/TimerHook';
+import MyTimer from '../components/countdown/MyTimer';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -69,14 +70,16 @@ export default function Home() {
             <hr />
             <h4>kyt</h4>
             {/* <Property /> */}
-            <Properties />
+            {/* <Properties /> */}
 
             <hr />
             <Refs />
             <hr />
             <CircleTimer />
+            {/* <br />
+            <TimerHook /> */}
             <br />
-            <TimerHook />
+            <MyTimer />
         </div>
     )
 }
