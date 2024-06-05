@@ -99,3 +99,11 @@ li {
 .time {
   font-size: 32px;
 }
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: skyblue;
+}
