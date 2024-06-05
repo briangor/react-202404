@@ -11,6 +11,7 @@ import Refs from '../components/Refs';
 import CircleTimer from '../components/countdown/CircleTimer';
 import TimerHook from '../components/countdown/TimerHook';
 import MyTimer from '../components/countdown/MyTimer';
+import Memo from '../components/memo/memo';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -50,6 +51,7 @@ export default function Home() {
 
     return (
         <div>
+            <h6>react-202404</h6>
             {/* <Navbar /> */}
             {/* <p> Users </p> */}
             {/* {data && data.map((user,index) => (
@@ -63,23 +65,25 @@ export default function Home() {
             {/* {results[1] && results[1]?.data?.map((album,index) => (
                 <div key={index}>{ album.title }</div>
             ))} */}
-            <hr />
+            {/* <hr />
             <Game />
             <TaskAppState />
             <TaskAppReducer />
             <hr />
-            <h4>kyt</h4>
+            <h4>kyt</h4> */}
             {/* <Property /> */}
             {/* <Properties /> */}
 
-            <hr />
-            <Refs />
-            <hr />
-            <CircleTimer />
+            {/* <hr /> */}
+            {/* <Refs /> */}
+            {/* <hr /> */}
+            {/* <CircleTimer /> */}
             {/* <br />
             <TimerHook /> */}
-            <br />
-            <MyTimer />
+            {/* <br /> */}
+            {/* <MyTimer /> */}
+            <hr />
+            <Memo/>
         </div>
     )
 }
