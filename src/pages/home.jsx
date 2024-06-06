@@ -12,6 +12,7 @@ import CircleTimer from '../components/countdown/CircleTimer';
 import TimerHook from '../components/countdown/TimerHook';
 import MyTimer from '../components/countdown/MyTimer';
 import Memo from '../components/memo/memo';
+import Callback from '../components/callback/callback';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -82,8 +83,10 @@ export default function Home() {
             <TimerHook /> */}
             {/* <br /> */}
             {/* <MyTimer /> */}
+            {/* <hr />
+            <Memo/> */}
             <hr />
-            <Memo/>
+            <Callback />
         </div>
     )
 }
