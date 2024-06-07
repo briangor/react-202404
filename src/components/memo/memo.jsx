@@ -9,6 +9,7 @@ export default function Memo() {
     const [isDark, setIsDark] = useState(false);
     return (
         <>
+        <p>useMemo</p>
         <button onClick={() => setTab('all')}>All</button>
         <button onClick={() => setTab('active')}>Active</button>
         <button onClick={() => setTab('completed')}>Completed</button>
