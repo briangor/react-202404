@@ -13,6 +13,7 @@ import TimerHook from '../components/countdown/TimerHook';
 import MyTimer from '../components/countdown/MyTimer';
 import Memo from '../components/memo/memo';
 import Callback from '../components/callback/callback';
+import Reducer from '../components/reducer2/reducer';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -83,10 +84,12 @@ export default function Home() {
             <TimerHook /> */}
             {/* <br /> */}
             {/* <MyTimer /> */}
-            {/* <hr />
-            <Memo/> */}
+            <hr />
+            <Memo/>
             <hr />
             <Callback />
+            <hr />
+            <Reducer />
         </div>
     )
 }
