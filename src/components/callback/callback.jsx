@@ -6,6 +6,7 @@ export default function Callback() {
     const [isDark, setIsDark] = useState(false);
     return (
         <>
+            <p>useCallback</p>
             <label>
                 <input type="checkbox" checked={isDark} onChange={e => setIsDark(e.target.checked)}/>
                 Dark Mode
