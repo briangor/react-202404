@@ -1,7 +1,7 @@
 export function createTodos() {
     const todos = [];
 
-    for(let i = 0; i < 50; i++) {
+    for(let i = 0; i < 13; i++) {
         todos.push({
             id: i,
             text: "Todo " + (i + 1),
