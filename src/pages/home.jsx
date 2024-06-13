@@ -55,7 +55,7 @@ export default function Home() {
     return (
         <div>
             <h6>react-202404</h6>
-            {/* <Navbar /> */}
+            <Navbar />
             {/* <p> Users </p> */}
             {/* {data && data.map((user,index) => (
                 <div key={index}>{ user.name }</div>
@@ -92,7 +92,7 @@ export default function Home() {
             <hr />
             <Reducer /> */}
             {/* <hr/> */}
-            <Store />
+            {/* <Store /> */}
         </div>
     )
 }
