@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "../../components/navbar";
 
 export default function Store() {
     const [products, setProducts] = useState([]);
@@ -21,6 +22,7 @@ export default function Store() {
     //console.log(products);
     return (
         <div>
+            <Navbar />
             <h5>Store</h5>
             <ul>
                 {products &&
