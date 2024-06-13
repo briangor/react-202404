@@ -9,6 +9,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import UsersUseEffect from './components/UsersUseEffect';
 import UsersReactQuery from './components/UsersReactQuery';
+import Store from './features/fakestoreapi/Store';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/users2",
     element: <UsersReactQuery />,
+  },
+  {
+    path: "/store",
+    element: <Store />,
   },
 ]);
 
