@@ -5,8 +5,6 @@ import axios from 'axios';
 import Game from '../features/tictactoe/Game';
 import TaskAppState from '../components/reducer/TaskAppState';
 import TaskAppReducer from '../components/reducer/TaskAppReducer';
-import Property from '../components/property';
-import Properties from '../components/properties';
 import Refs from '../components/Refs';
 import CircleTimer from '../components/countdown/CircleTimer';
 import TimerHook from '../components/countdown/TimerHook';
@@ -72,10 +70,6 @@ export default function Home() {
             <Game />
             <TaskAppState />
             <TaskAppReducer />
-            <hr />
-            <h4>kyt</h4> */}
-            {/* <Property /> */}
-            {/* <Properties /> */}
 
             {/* <hr /> */}
             {/* <Refs /> */}
