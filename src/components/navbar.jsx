@@ -7,6 +7,7 @@ export default function Navbar() {
         <ul>
             <Link to='/'>Home</Link>
             <Link to='/store'>Store</Link>
+            <Link to='/properties'>Properties</Link>
         </ul>
     </div>
   )
