@@ -13,6 +13,7 @@ import Memo from '../components/memo/memo';
 import Callback from '../components/callback/callback';
 import Reducer from '../components/reducer2/reducer';
 import Store from '../features/fakestoreapi/Store';
+import F1Timer from '../features/f1-start-timer/f1Timer';
 
 export default function Home() {
     const url = 'https://jsonplaceholder.typicode.com';
@@ -87,6 +88,7 @@ export default function Home() {
             <Reducer /> */}
             {/* <hr/> */}
             {/* <Store /> */}
+            {/* <F1Timer /> */}
         </div>
     )
 }
