@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import UsersUseEffect from './components/UsersUseEffect';
 import UsersReactQuery from './components/UsersReactQuery';
 import Store from './features/fakestoreapi/Store';
+import Properties from './features/properties/Properties';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/store",
     element: <Store />,
-  },
+  }, {
+    path: "/properties",
+    element: <Properties />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
