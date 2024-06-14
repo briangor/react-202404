@@ -1,0 +1,11 @@
+.properties {
+    color: skyblue;
+}
+
+.property-item {
+    border: 1px solid black;
+    min-width: 50%;
+    min-height: 20%;
+    width: 50%;
+    height: 400px;
+}
