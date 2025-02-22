@@ -84,4 +84,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### React query blog
 [blog](https://dev.to/abeinevincent/data-fetching-from-an-api-using-react-query-usequery-hook-explained-in-plain-english-4eei)
 
-x
+xx
